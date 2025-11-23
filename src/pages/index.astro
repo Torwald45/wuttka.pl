@@ -1,0 +1,547 @@
+---
+// Wuttka.pl - CV Marcin Wuttka
+---
+<head>
+  <meta charset="UTF-8" />
+  <title>Marcin Wuttka - QA Specialist | Machine Learning</title>
+  <meta
+    name="description"
+    content="Curriculum vitae of Marcin Wuttka, QA specialist with experience in telecommunications and machine learning. Contact and professional profile."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://wuttka.pl/" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --cv-border-color: #000000;
+      --cv-text-color: #000000;
+      --cv-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Old Standard TT", serif;
+      color: var(--cv-text-color);
+      background-color: #efefef;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 0 40px 0;
+    }
+
+    .cv-wrapper {
+      max-width: 940px;
+      background-color: transparent;
+      padding: 20px 0px 20px 0px;
+    }
+
+    .cv-header {
+      text-align: center;
+      padding: 0 0 30px 0;
+    }
+
+    .cv-header-box {
+      display: inline-block;
+      border: 5px solid var(--cv-border-color);
+      padding: 20px 80px;
+      max-width:650px;
+    }
+
+    .cv-name {
+      font-family: "Old Standard TT", serif;
+      font-size: 5vh;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 auto;
+      color: #000000;
+    }
+
+    .cv-header-sub {
+      font-family: "Old Standard TT", serif;
+      font-size: 19px;
+      font-weight: 400;
+      margin: 0;
+      color: #000000;
+    }
+
+
+    .cv-header-sub strong {
+      display: block;
+      font-size: 19px;      /* taka sama jak reszta tekstu */
+      font-weight: 700;     /* moze byc bold, jak w oryginale */
+      text-transform: none;
+      letter-spacing: 0;
+      margin-bottom: 2px;
+    }
+
+
+    .cv-columns {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+      margin-top:40px;
+    }
+
+    .cv-column {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .cv-column-left {
+      display:flex;
+      flex-direction:column;
+      gap:30px;
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 40px;
+      padding-left: 0;
+      border-right: 3px solid var(--cv-border-color);
+      text-align: right;
+    }
+
+    .cv-column-right {
+      display:flex;
+      flex-direction:column;
+      gap:30px;
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-left: 40px;
+      padding-right: 0;
+    }
+
+    .cv-section {
+      margin-bottom: 32px;
+    }
+
+    .cv-entry-single-box {
+      display: flex;
+      flex-direction: column;
+      gap:14px;
+    }
+
+    .cv-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-section-title {
+      font-family: "Old Standard TT", serif;
+      font-size: 31px;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: 3px;
+      white-space: break-spaces;
+      word-break: break-word;
+    }
+
+    .cv-entry-period {
+      font-family: "Old Standard TT", serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1;
+      margin: 20px 0 4px 0;
+    }
+
+    .cv-entry-period:first-of-type {
+      margin-top: 0;
+    }
+
+    .cv-entry-company {
+      font-family: "Old Standard TT", serif;
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1;
+      margin: 0 0 6px 0;
+    }
+
+    .cv-entry-role {
+      font-family: "Old Standard TT", serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1;
+      margin: 0 0 6px 0;
+    }
+
+    .cv-entry-role-extra {text-align:center!important;}
+
+    .cv-bold {font-weight:700;}
+
+    .cv-list {
+      font-family:Roboto, sans-serif;
+      list-style: disc;
+      padding-left: 22px;
+      margin: 0 0 16px 0;
+      font-size: 15px;
+      text-align: left;
+      color:#00000097;
+    }
+
+    .cv-list li {
+      margin-bottom: 4px;
+    }
+
+    .cv-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-education-degree {
+      font-family: Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1;
+      margin: 0 0 6px 0;
+      color:#00000097;
+    }
+
+    .cv-education-school {
+      font-family: "Old Standard TT", serif;
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin: 0 0 4px 0;
+    }
+
+    .cv-education-extra {
+      font-family: Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0 0 10px 0;
+      color:#00000097;
+    }
+
+    .cv-about-text {
+      font-family: "Old Standard TT", serif;
+      font-size: 15px;
+      line-height: 1.4;
+      margin: 0 0 12px 0;
+    }
+
+    .cv-contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: "Old Standard TT", serif;
+      font-size: 15px;
+    }
+
+    .cv-contact-list li {
+      margin-bottom: 6px;
+    }
+
+    .cv-contact-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-contact-list a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .cv-contact-list a:hover,
+    .cv-contact-list a:focus {
+      border-bottom-color: currentColor;
+    }
+
+    /* Skills as progress bars */
+    .cv-skills {
+      margin-top: 8px;
+    }
+
+    .cv-skill-bar {
+      position: relative;
+      height: 30px;
+      margin-bottom: 24px;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .cv-skill-bar:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-skill-bar-fill {
+      position: absolute;
+      inset: 0;
+      background-color: #000000;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      white-space: nowrap;
+      color: #ffffff;
+      font-size: 13px;
+      width: 0;
+      animation: cv-skill-fill 1s ease-out forwards;
+    }
+
+    .cv-skill-bar-fill span {
+      display: inline-block;
+    }
+
+    .fill-1 .cv-skill-bar-fill {
+      --cv-skill-width: 90%;
+      animation-delay: 0.05s;
+    }
+
+    .fill-2 .cv-skill-bar-fill {
+      --cv-skill-width: 75%;
+      animation-delay: 0.15s;
+    }
+
+    .fill-3 .cv-skill-bar-fill {
+      --cv-skill-width: 45%;
+      animation-delay: 0.25s;
+    }
+
+    .fill-4 .cv-skill-bar-fill {
+      --cv-skill-width: 30%;
+      animation-delay: 0.35s;
+    }
+
+    .fill-5 .cv-skill-bar-fill {
+      --cv-skill-width: 80%;
+      animation-delay: 0.45s;
+    }
+
+    @keyframes cv-skill-fill {
+      to {
+        width: var(--cv-skill-width, 100%);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .cv-wrapper {
+        padding: 20px 30px 30px 30px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .cv-wrapper {
+        padding: 20px 20px 20px 20px;
+      }
+
+        .cv-header-box {
+      padding: 20px 20px;
+    }
+
+      .cv-columns {
+        flex-direction: column;
+      }
+
+      .cv-column-left,
+      .cv-column-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .cv-column-left {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 24px;
+        padding-left:20px;
+      }
+
+      .cv-column-right {
+        padding-top: 24px;
+        padding-right:40px;
+        padding-left:20px;
+        border-left:3px solid #000;
+      }
+
+      .cv-header {
+        padding-bottom: 20px;
+      }
+    }
+
+    @media (max-width:300px) {
+      .cv-name {font-size:3vh;}
+    }
+  </style>
+</head>
+
+<div class="page-wrapper">
+  <main class="cv-wrapper">
+    <header class="cv-header">
+      <div class="cv-header-box">
+        <h1 class="cv-name">Marcin Wuttka</h1>
+        <p class="cv-header-sub">
+          QA Specialist<br />        
+          Beginner in Machine Learning
+        </p>
+      </div>
+    </header>
+
+    <div class="cv-columns">
+      <!-- Left column: Experience -->
+      <section class="cv-column cv-column-left" aria-label="Experience">
+          <h2 class="cv-section-title">Experience</h2>
+          <div class="cv-entry-single-box">
+          <p class="cv-entry-period">October 2017 - Present</p>
+          <h3 class="cv-entry-company">Freelance</h3>
+          <p class="cv-entry-role">Python Developer in Machine Learning project</p>
+          <ul class="cv-list">
+            <li>development of tool incorporating ETL into SW development process,</li>
+            <li>responsible for product deployment to several customers,</li>
+            <li>acquired basic knowledge of ML concepts and processes,</li>
+            <li>conducting trainings.</li>
+          </ul>
+
+          <p class="cv-entry-role">Embedded Software Integration Engineer</p>
+          <ul class="cv-list">
+            <li>involved in 5G network development,</li>
+            <li>customer on site support,</li>
+            <li>manual tests of faults and features,</li>
+            <li>test setup maintenance,</li>
+            <li>scripting in bash and python,</li>
+            <li>firmware release – responsible for preparation and release of software,</li>
+            <li>reviewing of documents/specification.</li>
+          </ul>
+          </div>
+          <div class="cv-entry-single-box">
+          <p class="cv-entry-period">February 2017 – October 2017</p>
+          <h3 class="cv-entry-company">Tieto Wroclaw</h3>
+          <p class="cv-entry-role">Test Engineer</p>
+          <ul class="cv-list">
+            <li>test development in internal framework,</li>
+            <li>manual testing,</li>
+            <li>test automatization.</li>
+          </ul>
+          </div>
+          <div class="cv-entry-single-box">
+          <p class="cv-entry-period">May 2012 – February 2017</p>
+          <h3 class="cv-entry-company">Nokia Networks Wroclaw</h3>
+          <p class="cv-entry-role">Embedded Software Integration Engineer</p>
+          <ul class="cv-list">
+            <li>Integration Team Leader in several projects (HW variants) and areas,</li>
+            <li>Continuous Integration – tests preparation and results verification,</li>
+            <li>System Component Tests for base station software components,</li>
+            <li>responsibility for test planning in scope and time,</li>
+            <li>manual tests of faults and features,</li>
+            <li>automatic test creation in internal framework,</li>
+            <li>LTE and WCDMA RF parameters measurements,</li>
+            <li>test setup maintenance,</li>
+            <li>scripting in bash and python,</li>
+            <li>firmware release – responsible for preparation and release of software,</li>
+            <li>ability of working with specification,</li>
+            <li>reviewing of documents/specification.</li>
+          </ul>
+
+          <p class="cv-entry-role cv-entry-role-extra cv-bold">Software Fault Coordinator</p>
+          <p class="cv-entry-role cv-entry-role-extra">(in parallel with other responsibilities)</p>
+          <p class="cv-entry-period cv-entry-role-extra">October 2013 – March 2015</p>
+          <ul class="cv-list">
+            <li>pre-analysis of faults,</li>
+            <li>inside team fault assignment,</li>
+            <li>leads discussion with fault reporter,</li>
+            <li>transferring faults between departments,</li>
+            <li>preparation of root cause analysis,</li>
+            <li>provide summaries and reports.</li>
+          </ul>
+        </div>
+        <div class="cv-entry-single-box">
+          <p class="cv-entry-period">July - September 2011</p>
+          <h3 class="cv-entry-company">Nokia Networks Wroclaw</h3>
+          <p class="cv-entry-role">Trainee</p>
+          <ul class="cv-list">
+            <li>execution of regression tests,</li>
+            <li>manual tests,</li>
+            <li>tests creation and automatization.</li>
+          </ul>
+          </div>
+      </section>
+
+      <!-- Right column: Education, Skills, About, Contact -->
+      <section class="cv-column cv-column-right" aria-label="Education and contact">
+        <h2 class="cv-section-title">Education</h2>
+        <div class="cv-entry-single-box">
+          <p class="cv-entry-period">2011 - 2012</p>
+          <h3 class="cv-education-school">Wroclaw University of Technology</h3>
+          <div class="cv-education-details">
+          <p class="cv-education-degree">Master’s Degree</p>
+          <p class="cv-education-extra">Electronics and Telecommunications</p>
+          <p class="cv-education-extra">Speciality: ICT Mobile Networks</p>
+        </div>
+
+          <p class="cv-entry-period">2007 - 2011</p>
+          <h3 class="cv-education-school">Wroclaw University of Technology</h3>
+          <div class="cv-education-details">
+          <p class="cv-education-degree">Bachelor of Engineering</p>
+          <p class="cv-education-extra">Electronics and Telecommunications</p>
+          <p class="cv-education-extra">Speciality: ICT Mobile Networks</p>
+          </div>
+        </div>
+        <h2 class="cv-section-title">Skills</h2>
+        <div class="cv-section">
+          <div class="cv-skills">
+            <div class="cv-skill-bar fill-1">
+              <div class="cv-skill-bar-fill">
+                <span>Manual and exploratory tests</span>
+              </div>
+            </div>
+            <div class="cv-skill-bar fill-2">
+              <div class="cv-skill-bar-fill">
+                <span>Test automation</span>
+              </div>
+            </div>
+            <div class="cv-skill-bar fill-3">
+              <div class="cv-skill-bar-fill">
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="cv-skill-bar fill-4">
+              <div class="cv-skill-bar-fill">
+                <span>Machine Learning</span>
+              </div>
+            </div>
+            <div class="cv-skill-bar fill-5">
+              <div class="cv-skill-bar-fill">
+                <span>RF measurement devices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2 class="cv-section-title">About Me</h2>
+          <p class="cv-about-text">
+            In IT since 2012, most of my career in telecommunication related projects in Nokia and
+            Tieto. When decided to try freelancing, I was involved in Machine Learning project as a
+            Python Developer. Then due to project end I got back to telecom to work on 5G network.
+          </p>
+          <p class="cv-about-text">
+            My main target for future is to improve Machine Learning skills. This industry branch is
+            vast, interesting and is fast growing.
+          </p>
+        </div>
+
+        <div class="cv-section">
+          <h2 class="cv-section-title">Contact</h2>
+          <ul class="cv-contact-list">
+            <li><a href="https://www.wuttka.pl">www.wuttka.pl</a></li>
+            <li><a href="mailto:marcin@wuttka.pl">marcin@wuttka.pl</a></li>
+            <li>(+48) 600 464 411</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
